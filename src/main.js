@@ -48,7 +48,7 @@
       });
     }, { threshold: 0.12 });
     els.forEach(function (el) { io.observe(el); });
-  });
+  }
 
   // ---- Quote form: opens the visitor's SMS app with a prefilled message ----
   // No backend needed; swap this number when reselling the site.
