@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-biz="title">HydroMax Pressure Washing — Driveways, Siding & Patios Brought Back to Life</title>
+<meta name="description" content="Professional pressure washing for driveways, house siding, decks and patios. Free same-week quotes. See the difference before you pay a dime.">
+<!-- ============================================================
+  DEMO TEMPLATE — TO RESELL TO A REAL BUSINESS, FIND & REPLACE:
+  "HydroMax Pressure Washing"  -> their business name
+  "HydroMax"                   -> short name
+  "(555) 482-9100"             -> their phone   (also tel:+15554829100)
+  "quotes@hydromaxwash.com"    -> their email
+  "Springfield"                -> their city
+  Then swap assets/driveway.jpg etc. with their photos.
+============================================================ -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700&family=Karla:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#16161d;          /* canvas */
+    --ink-2:#232329;        /* section alt */
+    --paper:#f4f2ec;        /* light text */
+    --muted:#a9a8b4;        /* secondary text */
+    --acc:#ff6026;          /* signature orange */
+    --acc-2:#ff9f2f;        /* gradient partner */
+    --line:rgba(244,242,236,.14);
+    --disp:'Rajdhani',sans-serif;
+    --body:'Karla',sans-serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{background:var(--ink);color:var(--paper);font-family:var(--body);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  ::selection{background:var(--paper);color:var(--ink)}
+  img{display:block;max-width:100%}
+  a{color:inherit}
+  :focus-visible{outline:3px solid var(--acc);outline-offset:3px;border-radius:2px}
+
+  .wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+
+  /* ---------- header ---------- */
+  header{position:sticky;top:0;z-index:50;background:rgba(22,22,29,.88);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+  .nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 24px;max-width:1180px;margin:0 auto}
+  .logo{font-family:var(--disp);font-weight:700;font-size:26px;letter-spacing:.04em;text-transform:uppercase;text-decoration:none;background:linear-gradient(100deg,var(--acc-2),var(--acc));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .nav-links{display:flex;gap:26px;align-items:center;list-style:none}
+  .nav-links a{font-family:var(--disp);font-weight:600;font-size:16px;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;color:var(--muted);transition:color .2s ease}
+  .nav-links a:hover{color:var(--paper)}
+  .btn{display:inline-block;font-family:var(--disp);font-weight:700;text-transform:uppercase;letter-spacing:.08em;background:var(--acc);color:#fff;text-decoration:none;padding:14px 30px;border-radius:6px;border:0;cursor:pointer;font-size:17px;transition:background .2s ease,transform .2s ease}
+  .btn:hover{background:#e04a12;transform:translateY(-2px)}
+  .btn:active{transform:translateY(0)}
+  .btn.ghost{background:transparent;border:2px solid var(--paper);color:var(--paper)}
+  .btn.ghost:hover{background:var(--paper);color:var(--ink)}
+  @media(max-width:760px){.nav-links li:not(.cta-li){display:none}}
+
+  /* ---------- hero ---------- */
+  .hero{padding-top:72px;padding-bottom:64px;position:relative}
+  .hero-eyebrow{font-family:var(--disp);font-weight:600;letter-spacing:.3em;text-transform:uppercase;color:var(--acc);font-size:15px;margin-bottom:18px}
+  .hero h1{font-family:var(--disp);font-weight:700;text-transform:uppercase;line-height:.92;letter-spacing:-.01em;font-size:clamp(56px,11vw,150px)}
+  .hero h1 .row2{display:block;text-align:right;color:transparent;-webkit-text-stroke:2px var(--paper)}
+  .hero-sub{max-width:56ch;color:var(--muted);margin:26px 0 34px;font-size:18px}
+  .hero-sub strong{color:var(--paper)}
+  .hero-ctas{display:flex;gap:16px;flex-wrap:wrap;align-items:center}
+  .scribble{display:block;width:190px;margin-top:6px}
+  .scribble path{stroke:var(--acc);stroke-width:5;fill:none;stroke-linecap:round}
+
+  /* ---------- before/after slider ---------- */
+  .ba{position:relative;border-radius:14px;overflow:hidden;touch-action:none;user-select:none;background:#000}
+  .ba img{width:100%;height:100%;object-fit:cover;pointer-events:none}
+  .ba .after{position:absolute;inset:0;clip-path:inset(0 0 0 var(--cut,50%))}
+  .ba .divider{position:absolute;top:0;bottom:0;left:var(--cut,50%);width:3px;background:var(--paper);transform:translateX(-50%);pointer-events:none}
+  .ba .knob{position:absolute;top:50%;left:var(--cut,50%);transform:translate(-50%,-50%);width:52px;height:52px;border-radius:50%;background:var(--acc);display:flex;align-items:center;justify-content:center;pointer-events:none;box-shadow:0 4px 18px rgba(0,0,0,.5)}
+  .ba .knob svg{width:26px;height:26px;stroke:#fff;stroke-width:2.5;fill:none}
+  .ba .tag{position:absolute;top:16px;font-family:var(--disp);font-weight:700;letter-spacing:.14em;font-size:14px;text-transform:uppercase;background:rgba(22,22,29,.75);padding:6px 14px;border-radius:99px;pointer-events:none}
+  .ba .tag.l{left:16px}.ba .tag.r{right:16px}
+  .ba input[type=range]{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize;margin:0}
+  .ba-hero{margin-top:56px;aspect-ratio:16/8.5;max-height:560px}
+  @media(max-width:760px){.ba-hero{aspect-ratio:4/5}}
+
+  /* ---------- sections ---------- */
+  section{padding:88px 0;border-top:1px solid var(--line)}
+  .sec-head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:52px}
+  h2{font-family:var(--disp);font-weight:700;text-transform:uppercase;font-size:clamp(38px,5.5vw,68px);line-height:1;letter-spacing:-.01em}
+  h2 em{font-style:normal;color:transparent;-webkit-text-stroke:1.5px var(--acc)}
+  .sec-note{max-width:34ch;color:var(--muted);font-size:16px}
+
+  /* services — ruled list, no card boxes */
+  .svc{border-top:1px solid var(--line)}
+  .svc-row{display:grid;grid-template-columns:70px 1fr auto;gap:20px;align-items:baseline;padding:26px 0;border-bottom:1px solid var(--line)}
+  .svc-num{font-family:var(--disp);font-weight:700;font-size:20px;color:transparent;-webkit-text-stroke:1px var(--muted)}
+  .svc-name{font-family:var(--disp);font-weight:700;text-transform:uppercase;font-size:clamp(22px,3vw,34px);line-height:1.05}
+  .svc-desc{color:var(--muted);font-size:16px;max-width:52ch;margin-top:6px}
+  .svc-price{font-family:var(--disp);font-weight:600;font-size:18px;color:var(--acc);white-space:nowrap}
+  @media(max-width:640px){.svc-row{grid-template-columns:44px 1fr}.svc-price{grid-column:2}}
+
+  /* gallery */
+  .gal{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+  .gal .ba{aspect-ratio:16/11}
+  @media(max-width:760px){.gal{grid-template-columns:1fr}}
+
+  /* testimonials */
+  .quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:40px 32px}
+  @media(max-width:860px){.quotes{grid-template-columns:1fr}}
+  .quote p{font-size:18px;line-height:1.6}
+  .hl{background:var(--acc);color:#fff;padding:1px 7px;border-radius:3px;display:inline-block;transform:rotate(var(--r,-2deg));font-weight:700}
+  .quote footer{margin-top:16px;color:var(--muted);font-size:15px}
+  .quote footer b{color:var(--paper);font-family:var(--disp);letter-spacing:.06em;text-transform:uppercase;font-size:15px}
+  .stars{color:var(--acc);letter-spacing:3px;font-size:15px;margin-bottom:10px}
+
+  /* quote form */
+  .quote-sec{background:var(--ink-2)}
+  .qf{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+  @media(max-width:860px){.qf{grid-template-columns:1fr}}
+  .qf-list{list-style:none;margin-top:26px}
+  .qf-list li{padding:12px 0;border-bottom:1px solid var(--line);color:var(--muted);display:flex;gap:12px;align-items:baseline}
+  .qf-list li b{color:var(--paper);min-width:26px;font-family:var(--disp)}
+  form.qform{display:grid;gap:16px}
+  .field label{display:block;font-family:var(--disp);font-weight:600;text-transform:uppercase;letter-spacing:.12em;font-size:14px;color:var(--muted);margin-bottom:7px}
+  .field input,.field select{width:100%;background:var(--ink);border:1px solid var(--line);color:var(--paper);padding:14px 16px;border-radius:6px;font-family:var(--body);font-size:16px;transition:border-color .2s ease}
+  .field input:focus,.field select:focus{border-color:var(--acc);outline:none}
+  .form-msg{font-size:15px;color:var(--acc-2);min-height:22px}
+
+  footer.site{padding:44px 0;border-top:1px solid var(--line)}
+  .foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}
+  .foot small{color:var(--muted)}
+  .foot a{color:var(--muted);text-decoration:none;font-family:var(--disp);letter-spacing:.1em;text-transform:uppercase;font-size:14px}
+  .foot a:hover{color:var(--paper)}
+
+  /* reveal motion */
+  .rv{opacity:0;transform:translateY(26px);transition:opacity .6s ease-out,transform .6s ease-out}
+  .rv.on{opacity:1;transform:none}
+  @media(prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto}
+    .rv{opacity:1;transform:none;transition:none}
+    .btn{transition:none}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <nav class="nav" aria-label="Main">
+    <a class="logo" href="#top"><span data-biz="short">HydroMax</span></a>
+    <ul class="nav-links">
+      <li><a href="#work">Results</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li class="cta-li"><a class="btn" href="#quote" style="padding:11px 22px;font-size:15px">Free Quote</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <div class="hero wrap">
+    <p class="hero-eyebrow rv">Pressure Washing · <span data-biz="city">Springfield</span> &amp; Nearby</p>
+    <h1 class="rv">Dirty goes in.<span class="row2">Clean comes out.</span></h1>
+    <p class="hero-sub rv">Driveways, siding, decks and patios — blasted back to new in one visit. <strong>Free quote in 10 minutes</strong>, most jobs done within the week. Drag the slider below and see what we mean.</p>
+    <div class="hero-ctas rv">
+      <a class="btn" href="#quote">Get My Free Quote</a>
+      <a class="btn ghost" href="tel:+15554829100" data-biz-tel>Call <span data-biz="phone">(555) 482-9100</span></a>
+    </div>
+    <svg class="scribble rv" viewBox="0 0 190 24" aria-hidden="true"><path d="M3 15 C 30 4, 55 22, 84 12 S 140 4, 187 14"/></svg>
+
+    <div class="ba ba-hero rv" data-ba>
+      <img src="https://www.kimi.com/apiv2-files/sign-obj/kimi-fs%2Ffiles%2Fblob%2F6106dab4342720839c1e3f21f9314dc43cfa9720bfd2ce681527ba82d5f9fd25?filename=driveway-dirty.jpg&sig=OYy7Td-3g7q-TNVg4MXel-54w-zmVRB4chPF7pFNyKU=&t=o" alt="Driveway before pressure washing — dark stains and grime">
+      <img class="after" src="https://www.kimi.com/apiv2-files/sign-obj/kimi-fs%2Ffiles%2Fblob%2F510f177aa8235fc30564a5daaa62a918241a98e5232ffd6a4e65baff0b41d046?filename=driveway.jpg&sig=5Yhu7_x7wLrD0qt8_32j2IM8yUrHvqtHoWhrx24rN5o=&t=o" alt="Driveway after pressure washing — bright clean concrete">
+      <span class="tag l">Before</span><span class="tag r">After</span>
+      <div class="divider"></div>
+      <div class="knob"><svg viewBox="0 0 24 24"><path d="M8 6 L3 12 L8 18 M16 6 L21 12 L16 18"/></svg></div>
+      <input type="range" min="0" max="100" value="50" aria-label="Drag to compare before and after">
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <h2>What we <em>blast</em></h2>
+        <p class="sec-note">Flat, upfront pricing. You approve the quote before we roll up.</p>
+      </div>
+      <div class="svc">
+        <div class="svc-row rv"><span class="svc-num">01</span><div><div class="svc-name">Driveways &amp; Walkways</div><p class="svc-desc">Oil stains, tire marks, years of ground-in grime — gone. The single biggest curb-appeal upgrade for the money.</p></div><span class="svc-price">from $149</span></div>
+        <div class="svc-row rv"><span class="svc-num">02</span><div><div class="svc-name">House Siding Soft-Wash</div><p class="svc-desc">Low-pressure soft wash kills algae and green film without damaging vinyl, brick or stucco.</p></div><span class="svc-price">from $229</span></div>
+        <div class="svc-row rv"><span class="svc-num">03</span><div><div class="svc-name">Decks &amp; Fences</div><p class="svc-desc">Wood and composite cleaned and prepped — ready for stain, or just ready for summer.</p></div><span class="svc-price">from $179</span></div>
+        <div class="svc-row rv"><span class="svc-num">04</span><div><div class="svc-name">Patios &amp; Pool Decks</div><p class="svc-desc">Pavers, stone and concrete restored to their original color. Slippery algae removed for good.</p></div><span class="svc-price">from $159</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESULTS -->
+  <section id="work">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <h2>Drag it. <em>See it.</em></h2>
+        <p class="sec-note">Real results from recent jobs around <span data-biz="city">Springfield</span>.</p>
+      </div>
+      <div class="gal">
+        <div class="ba rv" data-ba>
+          <img src="https://www.kimi.com/apiv2-files/sign-obj/kimi-fs%2Ffiles%2Fblob%2F45c63b7e0c3fadb58c4edb1f5b74a55e7b2d4bec4586a0d8331bcd7fac97e203?filename=siding-dirty.jpg&sig=Zezk3NuJNUjbCYkeS-JNal_CQk5NssUH27y2wrUZFTU=&t=o" alt="House siding before soft washing" loading="lazy">
+          <img class="after" src="https://www.kimi.com/apiv2-files/sign-obj/kimi-fs%2Ffiles%2Fblob%2Fd3f3d8fb2d4145fd7e28c1d9f82c1f09674b39ff64bf62aa29b3db2e6b3a6751?filename=siding.jpg&sig=jUkso72rm496AGKnI4t6W1Da8RsJwbtHzjbeml1K1y0=&t=o" alt="House siding after soft washing" loading="lazy">
+          <span class="tag l">Before</span><span class="tag r">After</span>
+          <div class="divider"></div>
+          <div class="knob"><svg viewBox="0 0 24 24"><path d="M8 6 L3 12 L8 18 M16 6 L21 12 L16 18"/></svg></div>
+          <input type="range" min="0" max="100" value="50" aria-label="Compare siding before and after">
+        </div>
+        <div class="ba rv" data-ba>
+          <img src="https://www.kimi.com/apiv2-files/sign-obj/kimi-fs%2Ffiles%2Fblob%2F6cf38761d3e60a85a464f920c2eea0c4c77ff1232ab5dbe8acb239679a434ede?filename=patio-dirty.jpg&sig=oftGoMSYAUklA2hTuhGvgxSeRT-X_H-1s7yNZL78yrs=&t=o" alt="Patio before pressure washing" loading="lazy">
+          <img class="after" src="https://www.kimi.com/apiv2-files/sign-obj/kimi-fs%2Ffiles%2Fblob%2Fe862293fc4e1dd1be49f048fc7dd1df4a5cc0f0e0a44f9d70573ee31c1e9108b?filename=patio.jpg&sig=fY-xq6wk9Oxu6IUbzjxOD0aP5CblOEJlFB2k7BqOtmU=&t=o" alt="Patio after pressure washing" loading="lazy">
+          <span class="tag l">Before</span><span class="tag r">After</span>
+          <div class="divider"></div>
+          <div class="knob"><svg viewBox="0 0 24 24"><path d="M8 6 L3 12 L8 18 M16 6 L21 12 L16 18"/></svg></div>
+          <input type="range" min="0" max="100" value="50" aria-label="Compare patio before and after">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section id="reviews">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <h2>Neighbors <em>talk</em></h2>
+        <p class="sec-note">5.0 average across 60+ local jobs.</p>
+      </div>
+      <div class="quotes">
+        <blockquote class="quote rv"><div class="stars">★★★★★</div><p>My driveway looks <span class="hl" style="--r:-2deg">brand new</span>. I honestly didn't think those oil stains could come out. Done in two hours.</p><footer><b>Mike R.</b> — Driveway &amp; walkway</footer></blockquote>
+        <blockquote class="quote rv"><div class="stars">★★★★★</div><p>Quoted in ten minutes, showed up Thursday, and the green film on our siding is <span class="hl" style="--r:2deg">completely gone</span>. Worth every penny.</p><footer><b>Sandra L.</b> — House soft-wash</footer></blockquote>
+        <blockquote class="quote rv"><div class="stars">★★★★★</div><p>They texted before and after photos before I even got home from work. My patio hasn't looked this good <span class="hl" style="--r:-1.5deg">since we moved in</span>.</p><footer><b>Dave &amp; Priya K.</b> — Patio &amp; pool deck</footer></blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUOTE -->
+  <section id="quote" class="quote-sec">
+    <div class="wrap qf">
+      <div class="rv">
+        <h2>Get your <em>free quote</em></h2>
+        <p class="sec-note" style="margin-top:14px">Fill this out and we'll text you a firm price — usually within the hour, always same day.</p>
+        <ul class="qf-list">
+          <li><b>✓</b> No obligation — approve the price before we book</li>
+          <li><b>✓</b> Most jobs finished within the week</li>
+          <li><b>✓</b> Before/after photos sent to your phone</li>
+          <li><b>✓</b> Prefer to talk? <a href="tel:+15554829100" data-biz-tel style="color:var(--acc)"><span data-biz="phone">(555) 482-9100</span></a></li>
+        </ul>
+      </div>
+      <form class="qform rv" id="quoteForm" novalidate>
+        <div class="field"><label for="fname">Your name</label><input id="fname" name="name" type="text" autocomplete="name" required></div>
+        <div class="field"><label for="fcontact">Phone or email</label><input id="fcontact" name="contact" type="text" autocomplete="tel" required></div>
+        <div class="field"><label for="fservice">What needs cleaning?</label>
+          <select id="fservice" name="service">
+            <option>Driveway / walkway</option>
+            <option>House siding</option>
+            <option>Deck / fence</option>
+            <option>Patio / pool deck</option>
+            <option>Something else</option>
+          </select>
+        </div>
+        <button class="btn" type="submit">Text Me My Quote</button>
+        <p class="form-msg" id="formMsg" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap foot">
+    <a class="logo" href="#top" style="font-size:20px"><span data-biz="short">HydroMax</span></a>
+    <small>© <span id="yr"></span> <span data-biz="full">HydroMax Pressure Washing</span> · <span data-biz="city">Springfield</span></small>
+    <a href="mailto:quotes@hydromaxwash.com" data-biz-mail><span data-biz="email">quotes@hydromaxwash.com</span></a>
+  </div>
+</footer>
+
+<script src="src/main.js"></script>
+<script>
+(function(){
+  var q = new URLSearchParams(window.location.search);
+  function set(k, v){ if(!v) return; document.querySelectorAll('[data-biz="'+k+'"]').forEach(function(el){ el.textContent = v; }); }
+  var full = q.get('biz'), short = q.get('short'), city = q.get('city'), phone = q.get('phone'), email = q.get('email');
+  set('full', full); set('short', short); set('city', city); set('phone', phone); set('email', email);
+  if (phone){ var digits = phone.replace(/[^\d+]/g,''); var tel = digits.indexOf('+')===0 ? digits : '+1'+digits.replace(/\D/g,'');
+    document.querySelectorAll('[data-biz-tel]').forEach(function(a){ a.href = 'tel:'+tel; }); }
+  if (email){ document.querySelectorAll('[data-biz-mail]').forEach(function(a){ a.href = 'mailto:'+email; }); }
+  if (short || full){ var n = full || short; var t = document.querySelector('[data-biz="title"]');
+    if (t) t.textContent = n + ' — Driveways, Siding & Patios Brought Back to Life'; }
+})();
+</script>
+</body>
+</html>
